@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@100;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../proyecto-final/css/styles.css" />
+    <script
+      src="https://kit.fontawesome.com/5b5f6e35f5.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="shortcut icon" type="image/png" href="/img/logo-nav.png" />
+    <title>Reserva</title>
+  </head>
+  <body>
+    <header>
+      <nav class="nav-bar">
+        <ul>
+          <li><a href="/index.html">Inicio</a></li>
+          <li><a href="/pages/menu.html">Menu</a></li>
+          <li><a href="/pages/about.html">Nosotros</a></li>
+          <li><a href="#">Reserva</a></li>
+          <li><a href="/pages/location.html">Ubicacion</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="booking-page">
+        <div class="booking-container">
+          <div class="booking-title">
+            <a href="../index.html">Volver al inicio</a>
+          </div>
+          <div class="booking-form-container">
+            <div class="booking-form-title">
+              <h5>Por favor, completar los datos para hacer la reserva!</h5>
+            </div>
+            <form class="booking-form">
+              <div class="booking-form-input">
+                <label for="">Nombre y apellido</label>
+                <input type="text" />
+              </div>
+              <div class="booking-form-input">
+                <label for="">Telefono</label>
+                <input type="text" />
+              </div>
+              <div class="booking-form-input">
+                <label for="">Fecha</label>
+                <input type="date" />
+              </div>
+              <div class="booking-form-input">
+                <label for="">Hora</label>
+                <input type="time" />
+              </div>
+              <div class="booking-form-input">
+                <label for="">Cantidad de personas</label>
+                <input type="number" />
+              </div>
+              <div class="booking-form-input">
+                <label for="opciones">Preferencia de ubicacion</label>
+                <select id="opciones" name="opciones">
+                  <option value="opcion1">Exterior del lugar</option>
+                  <option value="opcion2">Interior del lugar</option>
+                </select>
+              </div>
+              <div class="booking-form-buttons">
+                <input class="booking-form-button" type="submit">
+                <input class="booking-form-button" type="reset">
+              </div>
+            </form>
+            <div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="footer-home">
+        <div class="footer-container">
+          <div class="footer-directions">
+            <p>LA FOURCHETTE</p>
+            <p>140 WEST 4TH STREET | NY, NY 10012</p>
+          </div>
+          <div class="social-icons">
+            <a class="icon" href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a class="icon" href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a class="icon" href="#"><i class="fa-brands fa-facebook"></i></a>
+          </div>
+          <small>© 2023 La Fourchette - All Rights Reserved</small>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
