@@ -15,8 +15,6 @@ Tecnologias utilizadas:
 * HTML
 * CSS
 
-Primero te invito a ver la carpeta **wireframes** que se encuentra dentro de **proyecto-final** para ver el comienzo del proyecto, el modelado de cada una de las paginas y despues ver los demas archivos para apreciar el producto final.
-
 La carpeta **proyecto-final** esta dividida en las siguientes carpetas: 
 
 * css 
@@ -34,7 +32,12 @@ La carpeta **proyecto-final** esta dividida en las siguientes carpetas:
     - **booking.html:** estructura de la pagina de reserva.
     - **location.html:** estructura de la pagina de ubicacion del restaurante. 
 
+* wireframes
+    - **home:**  primer diseño de la pagina "inicio" desktop y mobile. 
+    - **menu:** primer diseño de la pagina "menu" desktop y mobile.
+    - **about:** primer diseño de la pagina "nosotros" desktop y mobile.
+    - **booking:** primer diseño de la pagina "reserva" desktop y mobile.. 
+    - **location:** primer diseño de la pagina "ubicacion"desktop y mobile.
+
 Por fuera de las carpetas tiene el archivo **index.html**
 que ademas de ser el 'Home' de la pagina tambien es el archivo principal de la misma, tambien tiene el archivo **.gitignore** con los archivos/carpetas que no se deben subir al repositorio.
-
-
