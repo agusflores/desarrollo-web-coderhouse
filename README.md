@@ -36,9 +36,9 @@ timeline
 ├── img 
 ├── pages
 ├── wireframes
-│ index.html             
-│ .gitignore
-│ README.md
+├ index.html             
+├ .gitignore
+├ README.md
 ```
 
 
