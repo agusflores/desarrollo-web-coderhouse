@@ -1,43 +1,73 @@
-# Proyecto final Desarrollo web
+# Proyecto Final Desarrollo Web Coderhouse
 
-Sitio web de un restaurante llamado "LA FOURCHETTE". 
+### 👉 Content
+>Sitio web de un restaurante llamado "LA FOURCHETTE". Para el curso de desarrollo web en Coderhouse.
 
-Dividido en 5 paginas HTML:
+### 🚀 Environments
 
-* Home
-* Menu 
-* Nosotros
-* Reserva
-* Ubicacion 
+| Phase  | QA            | Production    |
+|:------:|:-------------:|:-------------:|
+| Build  | [![Vercel](https://img.shields.io/badge/vercel-%23000000.svg?style=for-the-badge&logo=vercel&logoColor=white)](https://desarrollo-web-coderhouse-pi.vercel.app/)         | Not available |
 
-Tecnologias utilizadas: 
+### Built With
 
-* HTML
-* CSS
+* ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
+* ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
 
-La carpeta **proyecto-final** esta dividida en las siguientes carpetas: 
 
-* css 
-    - **styles.css:** archivo con los estilos del sitio web.
+##  📅 Roadmap
 
-* img
-    - **comidas:** imagenes de las comidas utilizadas en el menu.
-    - **postres:** imagenes de los postres utilizados en el menu. 
-    - **logo:** imagenes de los logos utilizados en el sitio. 
-    - archivos de imagenes utilizadas para c/u de las paginas.
+``` mermaid
+timeline
+    title Desarrollo web Coderhouse 
+    Primera entrega 25/04/2023 : Website : Wireframes
+    Segunda entrega 18/05/2023 : Otro : Otro
+    Tercera entrega 06/06/2023 : Otro : Otro
+    Entrega final 15/06/2023 : Otro : Otro
+```
 
-* pages
-    - **menu.html:** estructura de la pagina del menu.
-    - **about.html:** estructura de la pagina de la seccion 'nosotros'.
-    - **booking.html:** estructura de la pagina de reserva.
-    - **location.html:** estructura de la pagina de ubicacion del restaurante. 
+## 👨‍🔧 Folders Structure
 
-* wireframes
-    - **home:**  primer diseño de la pagina "inicio" desktop y mobile. 
-    - **menu:** primer diseño de la pagina "menu" desktop y mobile.
-    - **about:** primer diseño de la pagina "nosotros" desktop y mobile.
-    - **booking:** primer diseño de la pagina "reserva" desktop y mobile.. 
-    - **location:** primer diseño de la pagina "ubicacion"desktop y mobile.
+### General
 
-Por fuera de las carpetas tiene el archivo **index.html**
-que ademas de ser el 'Home' de la pagina tambien es el archivo principal de la misma, tambien tiene el archivo **.gitignore** con los archivos/carpetas que no se deben subir al repositorio.
+```
+.
+├── css
+├── img 
+├── pages
+├── wireframes
+│ index.html             
+│ .gitignore
+│ README.md
+```
+
+
+### Pages
+
+```
+.
+├── ...
+├── pages                    
+│   ├── about.html           # Pagina de la seccion nosotros
+│   ├── booking.html         # Pagina de para la reserva
+│   ├── location.html        # Pagina de la ubicación del restaurante
+|   └── menu.html            # Pagina del menu del restaurante
+├─── index.html              # Pagina del Home del restaurante
+└── ...
+```
+
+### Assets
+
+```
+.
+├── ...
+├── img                    
+│   ├── comidas         # Imagenes de las comidas utilizadas en el menu.
+│   ├── postres         # Imagenes de los postres utilizados en el menu.
+│   ├── logo            # Imagenes de los logos utilizados en el sitio.
+|   └── ...
+└── ...
+```
+
+## 👋 Reach me
+![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)
