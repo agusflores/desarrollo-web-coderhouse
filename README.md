@@ -9,7 +9,7 @@
 |:------:|:-------------:|:-------------:|
 | Build  | [![Vercel](https://img.shields.io/badge/vercel-%23000000.svg?style=for-the-badge&logo=vercel&logoColor=white)](https://desarrollo-web-coderhouse-pi.vercel.app/)         | Not available |
 
-### Built With
+### 🛠 Built With
 
 * ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
 * ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
@@ -70,4 +70,4 @@ timeline
 ```
 
 ## 👋 Reach me
-![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)
+[![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/agustin-flores-592a04217/)
