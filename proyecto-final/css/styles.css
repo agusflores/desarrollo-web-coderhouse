@@ -177,12 +177,6 @@ li .dropdown-item {
   margin-bottom: 1rem;
 }
 
-/* .menu-container-list-items {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-} */
-
 .menu-list {
   display: flex;
   flex-direction: row;
@@ -261,7 +255,7 @@ li .dropdown-item {
 }
 
 .about-schedule-title {
-  margin-top: 3rem;
+  margin-top: 1rem;
   padding: 0 5rem;
   border-bottom: 1px solid var(--main-color);
   background-color: whitesmoke;
@@ -281,12 +275,13 @@ li .dropdown-item {
 
 .about-icons {
   margin-top: 1rem;
+  margin-bottom: 0.5rem;
   display: flex;
   gap: 3rem;
 }
 
 .about-hours {
-  margin-top: 2rem;
+  margin-top: 1rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -312,7 +307,7 @@ li .dropdown-item {
 }
 
 .about-phone {
-  margin-top: 2rem;
+  margin-top: 1rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -347,7 +342,7 @@ li .dropdown-item {
 }
 
 .about-history-title {
-  margin-top: 3rem;
+  margin-top: 1rem;
   padding: 0 5rem;
   background-color: whitesmoke;
 }
@@ -360,7 +355,7 @@ li .dropdown-item {
 }
 
 .about-history-information {
-  margin-top: 2rem;
+  margin-top: 1rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -369,6 +364,8 @@ li .dropdown-item {
 .about-history-information p {
   color: var(--main-color);
   padding: 1rem;
+  width: 80%;
+  height: 100%;
 }
 
 /* booking page */
@@ -571,4 +568,41 @@ li .dropdown-item {
   .menu-container {
     width: 80%;
   }
+  /* about page mobile */
+ 
+  .about-image {
+    height: fit-content;
+  }
+
+  .about-schedule {
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+  }
+
+  .about-schedule-container {
+    height: 600px;
+    width: 80%;
+    border: 1px solid var(--main-color);
+  }
+
+  .about-history {
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+  }
+
+  .about-history-container {
+    height: 600px;
+    width: 80%;
+    border: 1px solid var(--main-color);
+  }
+
+  .about-history-information {
+    overflow: auto;
+    padding: 1rem;
+  }
+
+
 }
