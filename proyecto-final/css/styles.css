@@ -410,8 +410,6 @@ li .dropdown-item {
 
 .booking-form-container {
   margin-top: 1rem;
-  /* border-radius: 5%; */
-  /* border: 1px solid var(--main-color); */
   background-color: rgb(151, 86, 86);
   height: 85%;
   width: 100%;
@@ -606,5 +604,41 @@ li .dropdown-item {
   .about-history-information {
     overflow: auto;
     padding: 1rem;
+  }
+
+  /* booking page mobile */
+
+  .booking-container {
+    height: fit-content;
+    width: 80%;
+    flex-direction: column-reverse;
+
+  }
+
+  .booking-title {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+  }
+
+  .booking-title a {
+    padding: 0.5rem;
+    box-shadow: none;
+  }
+
+  .booking-form {
+    padding: 1rem;
+    margin: 0;
+    box-shadow: none;
+  }
+  
+  .booking-form-buttons {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+
+  }
+
+  .booking-form-input  {
+    margin-top: 2rem;
   }
 }
