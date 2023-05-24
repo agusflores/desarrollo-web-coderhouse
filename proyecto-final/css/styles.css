@@ -476,48 +476,63 @@ li .dropdown-item {
   height: 50%;
   width: 50%;
   display: flex;
-  flex-direction: row;
   justify-content: center;
   align-items: center;
 }
 
-.location-restaurant-info-div {
+.location-restaurant-info {
+  height: 100%;
+  width: 50%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100%;
-  width: 100%;
 }
 
-.location-restaurant-info {
-  height: 50%;
-  width: 50%;
+.location-restaurant-info-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60%;
+  width: 100%;  
+}
+
+.location-restaurant-info-img img {
+  width: 70%;
 }
 
 .location-restaurant-ubi {
-  height: 80%;
+  height: 100%;
   width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-.location-restaurant-ubi iframe {
-  margin-bottom: 2rem;
-  text-align: center;
+.location-restaurant-ubi-map {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60%;
+  width: 100%;  
+}
+
+.location-restaurant-ubi-p p {
+  margin-top: 0.5rem;
   padding: 0 1rem;
+  text-align: center;
 }
 
-.location-restaurant-ubi p {
+.location-restaurant-info-p  {
   margin-top: 0.5rem;
   text-align: center;
   padding: 0 1rem;
 }
 
-.location-restaurant-info p {
-  margin-top: 2rem;
-  text-align: center;
-  padding: 0 1rem;
+.location-restaurant-ubi-icon {
+  display: none;
 }
-
 /* media queries */
 
 @media screen and (max-width: 480px) {
@@ -629,7 +644,7 @@ li .dropdown-item {
   .booking-form {
     padding: 1rem;
     margin: 0;
-    box-shadow: none;
+    box-shadow: none; 
   }
   
   .booking-form-buttons {
@@ -640,5 +655,34 @@ li .dropdown-item {
 
   .booking-form-input  {
     margin-top: 2rem;
+  }
+
+  /* booking page mobile */
+  .location-container {
+    height: 650px;
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+  
+  .location-restaurant-info {
+    width: 100%;
+  }
+
+  .location-restaurant-ubi {
+    width: 100%;
+
+  }
+  .location-restaurant-ubi-icon {
+    margin: 1rem 0;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+
+  .location-restaurant-ubi-icon a {
+    justify-self: center;
+    font-size: 1.5rem;
   }
 }
