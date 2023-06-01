@@ -21,7 +21,7 @@
 timeline
     title Desarrollo web Coderhouse 
     Primera entrega 25/04/2023 : Website : Wireframes
-    Segunda entrega 18/05/2023 : Otro : Otro
+    Segunda entrega 18/05/2023 : Responsive : Bootstrap : Deploy
     Tercera entrega 06/06/2023 : Otro : Otro
     Entrega final 15/06/2023 : Otro : Otro
 ```
