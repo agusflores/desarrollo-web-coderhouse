@@ -13,6 +13,7 @@
 
 * ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
 * ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
+* ![SASS](https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white)
 
 
 ##  📅 Roadmap
@@ -22,7 +23,7 @@ timeline
     title Desarrollo web Coderhouse 
     Primera entrega 25/04/2023 : Website : Wireframes
     Segunda entrega 18/05/2023 : Responsive : Bootstrap : Deploy
-    Tercera entrega 06/06/2023 : Otro : Otro
+    Tercera entrega 06/06/2023 : Implementacion Sass
     Entrega final 15/06/2023 : Otro : Otro
 ```
 
@@ -33,10 +34,13 @@ timeline
 ```
 .
 ├── css
+├── scss
 ├── img 
 ├── pages
 ├── wireframes
-├ index.html             
+├ index.html 
+├ package-lock.json
+├ package.json            
 ├ .gitignore
 ├ README.md
 ```
