@@ -50,7 +50,7 @@ li .dropdown-item {
   padding: 0; }
 
 .home-page {
-  background-image: url(/proyecto-final/img/home-image.jpeg);
+  background-image: url(../../img/home-image.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
