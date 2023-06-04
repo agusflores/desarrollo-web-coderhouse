@@ -107,7 +107,7 @@ li .dropdown-item {
   color: #5d5656; }
 
 .menu-image {
-  background-image: url(/proyecto-final/img/menu-image.jpeg);
+  background-image: url(../../img/menu-image.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -176,7 +176,7 @@ li .dropdown-item {
   margin-bottom: 1rem; }
 
 .about-image {
-  background-image: url(/proyecto-final/img/location-image-background.jpg);
+  background-image: url(../../img/location-image-background.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -291,7 +291,7 @@ li .dropdown-item {
     height: 100%; }
 
 .booking-page {
-  background-image: url(/proyecto-final/img/booking-page.jpg);
+  background-image: url(../../img/booking-page.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -363,7 +363,7 @@ li .dropdown-item {
   padding: 1% 2%; }
 
 .location-page {
-  background-image: url(/proyecto-final/img/location-image-background.jpg);
+  background-image: url(../../img/location-image-background.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
