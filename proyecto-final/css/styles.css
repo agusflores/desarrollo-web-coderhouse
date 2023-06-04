@@ -1,4 +1,7 @@
-#carnes, #pastas, #pizzas, #postres {
+#carnes,
+#pastas,
+#pizzas,
+#postres {
   margin-top: -80px;
   padding-top: 80px; }
 
@@ -470,6 +473,7 @@ li .dropdown-item {
   .about-schedule-container {
     width: 80%;
     height: 600px;
+    border: none;
     border-radius: 5%; }
   .about-history {
     justify-content: center;
@@ -479,7 +483,8 @@ li .dropdown-item {
   .about-history-container {
     width: 80%;
     height: 600px;
-    border-radius: 5%; }
+    border-radius: 5%;
+    border: none; }
   .about-history-information {
     overflow: auto;
     padding: 1rem; }
@@ -496,10 +501,10 @@ li .dropdown-item {
     margin-top: 2rem;
     display: flex;
     justify-content: center; }
-  .booking-title a {
-    padding: 0.5rem;
-    box-shadow: none;
-    border-radius: 5%; }
+    .booking-title a {
+      padding: 0.5rem;
+      box-shadow: none;
+      border-radius: 5%; }
   .booking-form {
     margin: 0;
     padding: 1rem;

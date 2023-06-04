@@ -114,7 +114,10 @@ li .dropdown-item {
   color: $color-icons-hover;
 }
 
-#carnes, #pastas, #pizzas, #postres {
+#carnes,
+#pastas,
+#pizzas,
+#postres {
   @extend %menu-id-data;
 }
 
@@ -504,9 +507,8 @@ li .dropdown-item {
 
   .about-schedule-container {
     @include width-height(80%, 600px);
-    border-radius: 5%;
-    
-    // border: 1px solid $color-black;
+    border: none; 
+    @include border-radious-container-mobile; 
   }
 
   .about-history {
@@ -518,8 +520,8 @@ li .dropdown-item {
 
   .about-history-container {
     @include width-height(80%, 600px);
-    border-radius: 5%;
-    // border: 1px solid $color-black;
+    @include border-radious-container-mobile; 
+    border: none; 
   }
 
   .about-history-information {
@@ -539,19 +541,19 @@ li .dropdown-item {
   }
 
   .booking-form-container {
-    border-radius: 5%;
+    @include border-radious-container-mobile; 
   }
 
   .booking-title {
     margin-top: 2rem;
     display: flex;
     justify-content: center;
-  }
 
-  .booking-title a {
-    padding: 0.5rem;
-    box-shadow: none;
-    border-radius: 5%;
+    a {
+      padding: 0.5rem;
+      box-shadow: none;
+      @include border-radious-container-mobile; 
+    }
   }
 
   .booking-form {
@@ -570,7 +572,7 @@ li .dropdown-item {
 
   /* booking page mobile */
   .location-container {
-    border-radius: 5%;
+    @include border-radious-container-mobile; 
     @include width-height(80%, 700px);
     display: grid;
     grid-template-columns: repeat(1, 1fr);
