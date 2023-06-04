@@ -1,0 +1,38 @@
+@mixin position-sticky() {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+@mixin margin-padding($margin, $padding) {
+  margin: $margin;
+  padding: $padding;
+}
+
+@mixin width-height($width, $height) {
+  width: $width;
+  height: $height;
+}
+
+@mixin page-properties(
+  $background-image,
+  $height,
+  $align-items: center,
+  $justify-content: center
+) {
+  background-image: $background-image;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100%;
+  height: $height;
+  display: flex;
+  align-items: $align-items;
+  justify-content: $justify-content;
+}
+
+@mixin flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

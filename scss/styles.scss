@@ -1,0 +1,603 @@
+@import "../scss/utilidades/variables";
+@import "../scss/utilidades/mixin";
+@import "../scss/utilidades/extend";
+
+* {
+  @include margin-padding(0, 0);
+  box-sizing: border-box;
+  font-family: $font-default;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+header {
+  @include position-sticky();
+
+  nav {
+    border-bottom: 1px solid $color-black;
+    width: 100%;
+
+    ul {
+      display: flex;
+      justify-content: flex-end;
+      list-style: none;
+      width: 100%;
+      text-align: center;
+
+      li {
+        display: inline-block;
+        margin-left: 2rem;
+        padding: 1rem;
+
+        a {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+
+.navbar {
+  @include position-sticky();
+  @include margin-padding(0, 0);
+}
+
+.navbar-brand {
+  font-family: $font-brand;
+  font-size: 1rem;
+}
+
+li .dropdown-item {
+  @include margin-padding(0, 0);
+}
+
+.home-page {
+  @include page-properties($home-background-image, 1000px);
+}
+
+.home-title {
+  margin-top: 1rem;
+  font-family: $font-brand;
+  font-weight: bold;
+  text-align: center;
+  position: relative;
+  bottom: 4rem;
+}
+
+.home-page-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.home-page-logo img {
+  width: 100%;
+}
+
+.footer-home {
+  border-top: 1px solid $color-black;
+  background-color: $color-white;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+.footer-container {
+  margin-top: 1rem;
+}
+
+.footer-directions {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  margin: 1rem;
+  gap: 1rem;
+
+  a {
+    text-decoration: none;
+  }
+}
+
+.icon {
+  color: $color-black;
+}
+
+.icon :hover {
+  color: $color-icons-hover;
+}
+
+#carnes, #pastas, #pizzas, #postres {
+  @extend %menu-id-data;
+}
+
+.menu-image {
+  @include page-properties($menu-background-image, fit-content);
+}
+
+.menu-container {
+  background-color: $color-black;
+  @include width-height(50%, 100%);
+  @include flex;
+  flex-direction: column;
+}
+
+.menu-title {
+  color: $color-white;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.menu-item-title {
+  color: $color-white;
+  text-align: center;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+}
+
+.menu-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  text-align: center;
+  justify-content: space-evenly;
+}
+
+.menu-logo {
+  @include flex;
+}
+
+.item {
+  @include width-height(30%, 300px);
+  border: 2px solid $color-white;
+  margin: 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+.item-image {
+  @include width-height(100%, 80%);
+  position: relative;
+
+  img {
+    @include width-height(100%, 100%);
+    object-fit: cover;
+    border-bottom: 2px solid $color-white;
+  }
+}
+
+.item-name {
+  color: $color-white;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.about-image {
+  @include page-properties(
+    $about-and-location-background-image,
+    1200px,
+    stretch,
+    flex-start
+  );
+  flex-direction: column;
+}
+
+.about-schedule {
+  @include width-height(100%, 50%);
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.about-schedule-container {
+  border-bottom: 1px solid $color-black;
+  border-left: 1px solid $color-black;
+  background-color: $color-white;
+  @include width-height(50%, 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-schedule-title {
+  margin-top: 1rem;
+  padding: 0 5rem;
+  border-bottom: 1px solid $color-black;
+  background-color: $color-white;
+
+  h2 {
+    text-align: center;
+    margin-bottom: 0.5rem;
+  }
+
+  p {
+    color: $color-about-text;
+    font-weight: bolder;
+    text-align: center;
+    margin-bottom: 0.5rem;
+  }
+}
+
+.about-icons {
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  display: flex;
+  gap: 3rem;
+}
+
+.about-hours {
+  margin-top: 1rem;
+  @include flex;
+  flex-direction: column;
+
+  h3 {
+    color: $color-about-text;
+  }
+
+  ul {
+    margin-top: 1rem;
+    list-style: none;
+
+    li {
+      margin-top: 0.5rem;
+
+      span {
+        color: $color-about-text;
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+.about-phone {
+  margin-top: 1rem;
+  @include flex;
+  flex-direction: column;
+
+  h3 {
+    color: $color-about-text;
+    margin-bottom: 1rem;
+  }
+
+  p {
+    margin-bottom: 0.5rem;
+  }
+}
+
+.about-history {
+  @include width-height(100%, 50%);
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.about-history-container {
+  border-top: 1px solid $color-black;
+  border-right: 1px solid $color-black;
+  background-color: $color-white;
+  @include width-height(50%, 100%);
+  display: flex;
+  flex-direction: column;
+}
+
+.about-history-title {
+  margin-top: 1rem;
+  padding: 0 5rem;
+  background-color: $color-white;
+
+  h2 {
+    text-align: center;
+    margin-bottom: 0.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid $color-black;
+  }
+}
+
+.about-history-information {
+  margin-top: 1rem;
+  @include flex;
+  p {
+    color: $color-black;
+    padding: 1rem;
+    @include width-height(80%, 100%);
+  }
+}
+
+.booking-page {
+  @include page-properties($booking-background-image, 800px);
+  @include width-height(100%, 800px);
+  @include flex;
+  flex-direction: column;
+}
+
+.booking-container {
+  @include width-height(50%, 80%);
+  @include flex;
+  flex-direction: column;
+}
+
+.booking-title {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+
+  a {
+    color: $color-white;
+    text-decoration: none;
+    background-color: $color-booking-page;
+    padding: 0.5% 1%;
+  }
+}
+
+.booking-form-container {
+  margin-top: 1rem;
+  background-color: $color-booking-page;
+  @include width-height(100%, 85%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.booking-form-title {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 25px;
+  color: $color-white;
+}
+
+.booking-form {
+  margin-top: 3rem;
+  @extend %box-shadow-data;
+  padding: 3rem;
+}
+
+.booking-form-input {
+  margin-top: 0.5rem;
+  display: flex;
+  justify-content: space-around;
+
+  label {
+    width: 60%;
+  }
+
+  input {
+    width: 40%;
+  }
+}
+
+.booking-form-buttons {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: center;
+  gap: 10%;
+}
+
+.booking-form-button {
+  padding: 1% 2%;
+}
+
+.location-page {
+  @include page-properties($about-and-location-background-image, 800px);
+}
+
+.location-container {
+  background-color: $color-white;
+  @extend %box-shadow-data;
+  @include width-height(50%, 50%);
+  @include flex;
+}
+
+.location-restaurant-info {
+  margin-top: 1rem;
+  @include width-height(50%, 100%);
+  @include flex;
+  flex-direction: column;
+}
+
+.location-restaurant-info-img {
+  @include flex;
+  @include width-height(100%, 60%);
+
+  img {
+    width: 70%;
+  }
+}
+
+.location-restaurant-ubi {
+  @include width-height(50%, 100%);
+  @include flex;
+  flex-direction: column;
+}
+
+.location-restaurant-ubi-map {
+  @include flex;
+  @include width-height(100%, 60%);
+}
+
+.location-restaurant-ubi-p {
+  margin-top: 0.5rem;
+  padding: 0 1rem;
+  text-align: center;
+}
+
+.location-restaurant-info-p {
+  margin-top: 0.5rem;
+  text-align: center;
+  padding: 0 1rem;
+}
+
+.location-restaurant-ubi-icon {
+  display: none;
+}
+
+@media screen and (max-width: 480px) {
+  /* home page mobile */
+  .home-page {
+    background-attachment: initial;
+  }
+
+  .container-fluid.nav-container {
+    display: grid;
+    grid-template-rows: repeat(1, 1fr);
+    grid-template-columns: 100%;
+  }
+
+  .navbar-toggler,
+  .navbar-toggler.collapsed {
+    margin: 0.5rem;
+    width: 20%;
+    justify-self: end;
+  }
+
+  .navbar-brand {
+    display: none;
+  }
+
+  .menu-items.show {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+
+  .home-title {
+    bottom: 1rem;
+  }
+  /* menu page mobile */
+  .menu-list {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .item {
+    width: 80%;
+    justify-self: center;
+    margin: 1rem 0;
+  }
+
+  .menu-logo img {
+    width: 100%;
+  }
+
+  .menu-container {
+    width: 80%;
+  }
+  /* about page mobile */
+
+  .about-image {
+    height: fit-content;
+  }
+
+  .about-schedule {
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+  }
+
+  .about-schedule-container {
+    @include width-height(80%, 600px);
+    border-radius: 5%;
+    
+    // border: 1px solid $color-black;
+  }
+
+  .about-history {
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+  }
+
+  .about-history-container {
+    @include width-height(80%, 600px);
+    border-radius: 5%;
+    // border: 1px solid $color-black;
+  }
+
+  .about-history-information {
+    overflow: auto;
+    padding: 1rem;
+  }
+
+  /* booking page mobile */
+
+  .booking-page {
+    background-attachment: initial;
+  }
+
+  .booking-container {
+    @include width-height(80%, fit-content);
+    flex-direction: column-reverse;
+  }
+
+  .booking-form-container {
+    border-radius: 5%;
+  }
+
+  .booking-title {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+  }
+
+  .booking-title a {
+    padding: 0.5rem;
+    box-shadow: none;
+    border-radius: 5%;
+  }
+
+  .booking-form {
+    @include margin-padding(0, 1rem);
+    box-shadow: none;
+  }
+
+  .booking-form-buttons {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+  }
+
+  .booking-form-input {
+    margin-top: 2rem;
+  }
+
+  /* booking page mobile */
+  .location-container {
+    border-radius: 5%;
+    @include width-height(80%, 700px);
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+
+  .location-restaurant-info {
+    width: 100%;
+  }
+
+  .location-restaurant-ubi {
+    width: 100%;
+  }
+  .location-restaurant-ubi-icon {
+    margin: 1rem 0;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+
+    small {
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+
+    a {
+      justify-self: center;
+      font-size: 1.5rem;
+    }
+  }
+}
