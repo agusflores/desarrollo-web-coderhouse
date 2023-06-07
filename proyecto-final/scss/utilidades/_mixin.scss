@@ -37,6 +37,6 @@
   align-items: center;
 }
 
-@mixin border-radious-container-mobile {
-  border-radius: 5%;
+@mixin border-radious-container {
+  border-radius: 8px;
 }

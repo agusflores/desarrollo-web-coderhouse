@@ -160,7 +160,8 @@ li .dropdown-item {
 
 .item {
   @include width-height(30%, 300px);
-  border: 2px solid $color-white;
+  @include border-radious-container;
+  border: 1px solid $color-white;
   margin: 5px;
   display: flex;
   flex-direction: column;
@@ -171,9 +172,9 @@ li .dropdown-item {
   position: relative;
 
   img {
-    @include width-height(100%, 100%);
+    @include width-height(100%, 220px);
     object-fit: cover;
-    border-bottom: 2px solid $color-white;
+    border-bottom: 1px solid $color-white;
   }
 }
 
@@ -336,6 +337,7 @@ li .dropdown-item {
 
   a {
     color: $color-white;
+    @include border-radious-container;
     text-decoration: none;
     background-color: $color-booking-page;
     padding: 0.5% 1%;
@@ -343,6 +345,7 @@ li .dropdown-item {
 }
 
 .booking-form-container {
+  @include border-radious-container;
   margin-top: 1rem;
   background-color: $color-booking-page;
   @include width-height(100%, 85%);
@@ -359,6 +362,7 @@ li .dropdown-item {
 }
 
 .booking-form {
+  @include border-radious-container;
   margin-top: 3rem;
   @extend %box-shadow-data;
   padding: 3rem;
@@ -371,6 +375,7 @@ li .dropdown-item {
 
   label {
     width: 60%;
+    color: $color-white;
   }
 
   input {
@@ -386,7 +391,10 @@ li .dropdown-item {
 }
 
 .booking-form-button {
-  padding: 1% 2%;
+  padding: 1% 3%;
+  border: none;
+  font-weight: bold;
+  @include border-radious-container;
 }
 
 .location-page {
@@ -394,6 +402,7 @@ li .dropdown-item {
 }
 
 .location-container {
+  @include border-radious-container;
   background-color: $color-white;
   @extend %box-shadow-data;
   @include width-height(50%, 50%);
@@ -507,8 +516,8 @@ li .dropdown-item {
 
   .about-schedule-container {
     @include width-height(80%, 600px);
-    border: none; 
-    @include border-radious-container-mobile; 
+    border: none;
+    @include border-radious-container;
   }
 
   .about-history {
@@ -520,8 +529,8 @@ li .dropdown-item {
 
   .about-history-container {
     @include width-height(80%, 600px);
-    @include border-radious-container-mobile; 
-    border: none; 
+    @include border-radious-container;
+    border: none;
   }
 
   .about-history-information {
@@ -541,7 +550,11 @@ li .dropdown-item {
   }
 
   .booking-form-container {
-    @include border-radious-container-mobile; 
+    @include border-radious-container;
+  }
+
+  .booking-form-title {
+    padding: 1rem;
   }
 
   .booking-title {
@@ -552,7 +565,7 @@ li .dropdown-item {
     a {
       padding: 0.5rem;
       box-shadow: none;
-      @include border-radious-container-mobile; 
+      @include border-radious-container;
     }
   }
 
@@ -572,7 +585,7 @@ li .dropdown-item {
 
   /* booking page mobile */
   .location-container {
-    @include border-radious-container-mobile; 
+    @include border-radious-container;
     @include width-height(80%, 700px);
     display: grid;
     grid-template-columns: repeat(1, 1fr);
