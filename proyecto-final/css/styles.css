@@ -360,6 +360,8 @@ li .dropdown-item {
     color: whitesmoke; }
   .booking-form-input input {
     width: 40%; }
+  .booking-form-input #opciones {
+    width: 40%; }
 
 .booking-form-buttons {
   margin-top: 3rem;
@@ -509,10 +511,11 @@ li .dropdown-item {
   .booking-form-title {
     padding: 1rem; }
   .booking-title {
-    margin-top: 2rem;
-    display: flex;
+    margin-top: 1rem;
     justify-content: center; }
     .booking-title a {
+      width: 100%;
+      text-align: center;
       padding: 0.5rem;
       box-shadow: none;
       border-radius: 8px; }

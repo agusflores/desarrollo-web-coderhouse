@@ -381,6 +381,10 @@ li .dropdown-item {
   input {
     width: 40%;
   }
+
+  #opciones {
+    width: 40%;
+  }
 }
 
 .booking-form-buttons {
@@ -558,11 +562,11 @@ li .dropdown-item {
   }
 
   .booking-title {
-    margin-top: 2rem;
-    display: flex;
+    margin-top: 1rem;
     justify-content: center;
-
     a {
+      width: 100%;
+      text-align: center;
       padding: 0.5rem;
       box-shadow: none;
       @include border-radious-container;
