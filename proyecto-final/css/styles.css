@@ -497,7 +497,8 @@ li .dropdown-item {
     padding-bottom: 1rem;
     border-bottom: 1px solid black; }
   .about-schedule-title {
-    border-bottom: 0; }
+    border-bottom: 0;
+    width: 100%; }
   .about-history-container {
     width: 80%;
     height: 600px;
