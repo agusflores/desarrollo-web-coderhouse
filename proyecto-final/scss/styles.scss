@@ -588,9 +588,13 @@ li .dropdown-item {
   }
 
   /* booking page mobile */
+
+.location-page { 
+  @include width-height(100%, 900px);
+}
   .location-container {
     @include border-radious-container;
-    @include width-height(80%, 700px);
+    @include width-height(80%, fit-content);
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(2, 1fr);
