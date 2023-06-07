@@ -14,7 +14,6 @@ html {
 
 header {
   @include position-sticky();
-
   nav {
     border-bottom: 1px solid $color-black;
     width: 100%;
@@ -204,8 +203,8 @@ li .dropdown-item {
 }
 
 .about-schedule-container {
-  border-bottom: 1px solid $color-black;
-  border-left: 1px solid $color-black;
+  // border-bottom: 1px solid $color-black;
+  // border-left: 1px solid $color-black;
   background-color: $color-white;
   @include width-height(50%, 100%);
   display: flex;
@@ -286,8 +285,8 @@ li .dropdown-item {
 }
 
 .about-history-container {
-  border-top: 1px solid $color-black;
-  border-right: 1px solid $color-black;
+  // border-top: 1px solid $color-black;
+  // border-right: 1px solid $color-black;
   background-color: $color-white;
   @include width-height(50%, 100%);
   display: flex;
@@ -824,29 +823,14 @@ li .dropdown-item {
       font-size: 1.5rem;
     }
   }
-
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 @media screen and (min-width: 992px) and (max-width: 1550px) {
   /* home page tablet */
   .home-page {
     background-attachment: initial;
   }
-  
+
   .home-title {
     bottom: 1rem;
   }
@@ -905,7 +889,7 @@ li .dropdown-item {
     border-bottom: 0;
     width: 100%;
   }
-  
+
   .about-history-container {
     @include width-height(80%, 700px);
     @include border-radious-container;
@@ -964,5 +948,4 @@ li .dropdown-item {
     padding: 1rem;
     border-radius: 8px;
   }
-
 }
