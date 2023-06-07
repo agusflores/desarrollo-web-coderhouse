@@ -330,6 +330,10 @@ li .dropdown-item {
     background-color: #5d82cc;
     padding: 0.5% 1%; }
 
+.booking-title :hover {
+  background-color: whitesmoke;
+  color: #5d82cc; }
+
 .booking-form-container {
   border-radius: 8px;
   margin-top: 1rem;

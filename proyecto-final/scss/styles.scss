@@ -344,6 +344,11 @@ li .dropdown-item {
   }
 }
 
+.booking-title :hover{
+  background-color: $color-white;
+  color: $color-booking-page;
+} 
+
 .booking-form-container {
   @include border-radious-container;
   margin-top: 1rem;
