@@ -491,6 +491,13 @@ li .dropdown-item {
     align-items: center;
     margin-top: 5rem;
     margin-bottom: 5rem; }
+  .about-schedule-title p {
+    width: 100%;
+    margin-bottom: 0.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid black; }
+  .about-schedule-title {
+    border-bottom: 0; }
   .about-history-container {
     width: 80%;
     height: 600px;
@@ -501,6 +508,8 @@ li .dropdown-item {
     padding: 1rem; }
   /* booking page mobile */
   .booking-page {
+    width: 100%;
+    height: 900px;
     background-attachment: initial; }
   .booking-container {
     width: 80%;
