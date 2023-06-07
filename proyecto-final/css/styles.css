@@ -122,7 +122,7 @@ li .dropdown-item {
 
 .menu-container {
   background-color: black;
-  width: 50%;
+  width: 70%;
   height: 100%;
   display: flex;
   justify-content: center;
@@ -569,8 +569,8 @@ li .dropdown-item {
       justify-self: center;
       font-size: 1.5rem; } }
 
-@media screen and (max-width: 991px) {
-  /* home page mobile */
+@media screen and (min-width: 481px) and (max-width: 991px) {
+  /* home page tablet */
   .home-page {
     background-attachment: initial; }
   .container-fluid.nav-container {
@@ -591,7 +591,7 @@ li .dropdown-item {
     text-align: center; }
   .home-title {
     bottom: 1rem; }
-  /* menu page mobile */
+  /* menu page tablet */
   .menu-list {
     display: grid;
     grid-template-columns: repeat(1, 1fr); }
@@ -603,7 +603,7 @@ li .dropdown-item {
     width: 100%; }
   .menu-container {
     width: 80%; }
-  /* about page mobile */
+  /* about page tablet */
   .about-image {
     height: fit-content; }
   .about-schedule {
@@ -636,7 +636,7 @@ li .dropdown-item {
   .about-history-information {
     overflow: auto;
     padding: 1rem; }
-  /* booking page mobile */
+  /* booking page tablet */
   .booking-page {
     width: 100%;
     height: 900px;
@@ -667,7 +667,7 @@ li .dropdown-item {
     margin-bottom: 5rem; }
   .booking-form-input {
     margin-top: 2rem; }
-  /* booking page mobile */
+  /* booking page tablet */
   .location-page {
     width: 100%;
     height: 1100px; }
@@ -694,3 +694,88 @@ li .dropdown-item {
     .location-restaurant-ubi-icon a {
       justify-self: center;
       font-size: 1.5rem; } }
+
+@media screen and (min-width: 992px) and (max-width: 1550px) {
+  /* home page tablet */
+  .home-page {
+    background-attachment: initial; }
+  .home-title {
+    bottom: 1rem; }
+  /* menu page tablet */
+  .menu-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); }
+  .item {
+    width: 80%;
+    justify-self: center;
+    margin: 1rem 0; }
+  .menu-logo img {
+    width: 100%; }
+  .menu-container {
+    width: 80%; }
+  /* about page tablet */
+  .about-image {
+    height: fit-content; }
+  .about-schedule {
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem; }
+  .about-schedule-container {
+    width: 80%;
+    height: 700px;
+    border: none;
+    border-radius: 8px; }
+  .about-history {
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+    margin-bottom: 5rem; }
+  .about-schedule-title p {
+    width: 100%;
+    margin-bottom: 0.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid black; }
+  .about-schedule-title {
+    border-bottom: 0;
+    width: 100%; }
+  .about-history-container {
+    width: 80%;
+    height: 700px;
+    border-radius: 8px;
+    border: none; }
+  .about-history-information {
+    padding: 1rem; }
+  /* booking page tablet */
+  .booking-page {
+    width: 100%;
+    height: 1100px;
+    background-attachment: initial; }
+  .booking-container {
+    width: 80%;
+    height: fit-content;
+    flex-direction: column-reverse; }
+  .booking-form-container {
+    border-radius: 8px; }
+  .booking-form-title {
+    padding: 1rem; }
+  .booking-title {
+    margin-top: 1rem;
+    justify-content: center; }
+    .booking-title a {
+      width: 100%;
+      text-align: center;
+      padding: 0.5rem;
+      box-shadow: none;
+      border-radius: 8px; }
+  .booking-form {
+    margin: 0;
+    padding: 1rem;
+    box-shadow: none; }
+  .booking-form-buttons {
+    margin-top: 5rem;
+    margin-bottom: 5rem; }
+  .booking-form-input {
+    margin-top: 2rem;
+    border: 1px solid whitesmoke;
+    padding: 1rem;
+    border-radius: 8px; } }
