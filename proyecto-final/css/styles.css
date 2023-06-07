@@ -45,7 +45,7 @@ header {
   padding: 0; }
 
 .navbar-brand {
-  font-family: "Pacifico", cursive;
+  font-family: "Roboto", sans-serif;
   font-size: 1rem; }
 
 li .dropdown-item {
@@ -53,7 +53,7 @@ li .dropdown-item {
   padding: 0; }
 
 .home-page {
-  background-image: url(../../img/home-image.jpeg);
+  background-image: url(../../img/home-image.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -65,7 +65,7 @@ li .dropdown-item {
 
 .home-title {
   margin-top: 1rem;
-  font-family: "Pacifico", cursive;
+  font-family: "Roboto", sans-serif;
   font-weight: bold;
   text-align: center;
   position: relative;
@@ -110,7 +110,7 @@ li .dropdown-item {
   color: #5d5656; }
 
 .menu-image {
-  background-image: url(../../img/menu-image.jpeg);
+  background-image: url(../../img/menu-image.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
