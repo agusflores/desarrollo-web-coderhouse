@@ -462,7 +462,10 @@ li .dropdown-item {
 @media screen and (max-width: 480px) {
   /* home page mobile */
   .home-page {
-    background-attachment: initial; }
+    background-attachment: initial;
+    height: 1200px; }
+  .cards-especialidades {
+    flex-direction: column; }
   .container-fluid.nav-container {
     display: grid;
     grid-template-rows: repeat(1, 1fr);
@@ -588,7 +591,10 @@ li .dropdown-item {
 @media screen and (min-width: 481px) and (max-width: 991px) {
   /* home page tablet */
   .home-page {
-    background-attachment: initial; }
+    background-attachment: initial;
+    height: 1200px; }
+  .cards-especialidades {
+    flex-direction: column; }
   .container-fluid.nav-container {
     display: grid;
     grid-template-rows: repeat(1, 1fr);

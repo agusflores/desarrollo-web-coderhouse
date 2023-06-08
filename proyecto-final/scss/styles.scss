@@ -495,6 +495,11 @@ li .dropdown-item {
   /* home page mobile */
   .home-page {
     background-attachment: initial;
+    height: 1200px;
+  }
+  
+  .cards-especialidades {
+    flex-direction: column;
   }
 
   .container-fluid.nav-container {
@@ -524,6 +529,7 @@ li .dropdown-item {
     bottom: 1rem;
   }
   /* menu page mobile */
+
   .menu-list {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
@@ -675,6 +681,11 @@ li .dropdown-item {
   /* home page tablet */
   .home-page {
     background-attachment: initial;
+    height: 1200px;
+  }
+
+  .cards-especialidades {
+    flex-direction: column;
   }
 
   .container-fluid.nav-container {
