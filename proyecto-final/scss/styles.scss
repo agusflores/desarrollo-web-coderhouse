@@ -15,7 +15,7 @@ html {
 header {
   @include position-sticky();
   nav {
-    border-bottom: 1px solid $color-black;
+    border-bottom: $border-black;
     width: 100%;
 
     ul {
@@ -23,7 +23,7 @@ header {
       justify-content: flex-end;
       list-style: none;
       width: 100%;
-      text-align: center;
+      @extend %text-align-data;
 
       li {
         display: inline-block;
@@ -31,7 +31,7 @@ header {
         padding: 1rem;
 
         a {
-          text-decoration: none;
+          @extend %text-decoration-data;
         }
       }
     }
@@ -44,7 +44,6 @@ header {
 }
 
 .navbar-brand {
-  font-family: $font-default;
   font-size: 1rem;
 }
 
@@ -58,9 +57,9 @@ li .dropdown-item {
 
 .home-title {
   margin-top: 1rem;
-  font-family: $font-default;
+  font-family: $font-title-brand;
   font-weight: bold;
-  text-align: center;
+  @extend %text-align-data;
   position: relative;
   bottom: 4rem;
 }
@@ -76,10 +75,10 @@ li .dropdown-item {
 }
 
 .footer-home {
-  border-top: 1px solid $color-black;
+  border-top: $border-black;
   background-color: $color-white;
   display: flex;
-  text-align: center;
+  @extend %text-align-data;
   justify-content: center;
 }
 
@@ -96,12 +95,12 @@ li .dropdown-item {
 .social-icons {
   display: flex;
   justify-content: center;
-  text-decoration: none;
+  @extend %text-decoration-data;
   margin: 1rem;
   gap: 1rem;
 
   a {
-    text-decoration: none;
+    @extend %text-decoration-data
   }
 }
 
@@ -133,13 +132,13 @@ li .dropdown-item {
 
 .menu-title {
   color: $color-white;
-  text-align: center;
+  @extend %text-align-data;
   margin-top: 1rem;
 }
 
 .menu-item-title {
   color: $color-white;
-  text-align: center;
+  @extend %text-align-data;
   margin-top: 3rem;
   margin-bottom: 1rem;
 }
@@ -149,7 +148,7 @@ li .dropdown-item {
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
-  text-align: center;
+  @extend %text-align-data;
   justify-content: space-evenly;
 }
 
@@ -160,7 +159,7 @@ li .dropdown-item {
 .item {
   @include width-height(30%, 300px);
   @include border-radious-container;
-  border: 1px solid $color-white;
+  border: $border-white;
   margin: 5px;
   display: flex;
   flex-direction: column;
@@ -180,7 +179,7 @@ li .dropdown-item {
 .item-name {
   color: $color-white;
   font-weight: bold;
-  text-align: center;
+  @extend %text-align-data;
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
@@ -203,8 +202,6 @@ li .dropdown-item {
 }
 
 .about-schedule-container {
-  // border-bottom: 1px solid $color-black;
-  // border-left: 1px solid $color-black;
   background-color: $color-white;
   @include width-height(50%, 100%);
   display: flex;
@@ -215,18 +212,18 @@ li .dropdown-item {
 .about-schedule-title {
   margin-top: 1rem;
   padding: 0 5rem;
-  border-bottom: 1px solid $color-black;
+  border-bottom: $border-black;
   background-color: $color-white;
 
   h2 {
-    text-align: center;
+    @extend %text-align-data;
     margin-bottom: 0.5rem;
   }
 
   p {
     color: $color-about-text;
     font-weight: bolder;
-    text-align: center;
+    @extend %text-align-data;
     margin-bottom: 0.5rem;
   }
 }
@@ -285,8 +282,6 @@ li .dropdown-item {
 }
 
 .about-history-container {
-  // border-top: 1px solid $color-black;
-  // border-right: 1px solid $color-black;
   background-color: $color-white;
   @include width-height(50%, 100%);
   display: flex;
@@ -299,10 +294,10 @@ li .dropdown-item {
   background-color: $color-white;
 
   h2 {
-    text-align: center;
+    @extend %text-align-data;
     margin-bottom: 0.5rem;
     padding-bottom: 1rem;
-    border-bottom: 1px solid $color-black;
+    border-bottom: $border-black;
   }
 }
 
@@ -337,7 +332,7 @@ li .dropdown-item {
   a {
     color: $color-white;
     @include border-radious-container;
-    text-decoration: none;
+    @extend %text-decoration-data;
     background-color: $color-booking-page;
     padding: 0.5% 1%;
   }
@@ -359,7 +354,7 @@ li .dropdown-item {
 }
 
 .booking-form-title {
-  text-align: center;
+  @extend %text-align-data;
   margin-top: 2rem;
   font-size: 25px;
   color: $color-white;
@@ -447,12 +442,12 @@ li .dropdown-item {
 .location-restaurant-ubi-p {
   margin-top: 0.5rem;
   padding: 0 1rem;
-  text-align: center;
+  @extend %text-align-data;
 }
 
 .location-restaurant-info-p {
   margin-top: 0.5rem;
-  text-align: center;
+  @extend %text-align-data;
   padding: 0 1rem;
 }
 
@@ -517,8 +512,7 @@ li .dropdown-item {
   }
 
   .about-schedule {
-    justify-content: center;
-    align-items: center;
+    @include flex;
     margin-top: 5rem;
   }
 
@@ -529,8 +523,7 @@ li .dropdown-item {
   }
 
   .about-history {
-    justify-content: center;
-    align-items: center;
+    @include flex;
     margin-top: 5rem;
     margin-bottom: 5rem;
   }
@@ -539,7 +532,7 @@ li .dropdown-item {
     width: 100%;
     margin-bottom: 0.5rem;
     padding-bottom: 1rem;
-    border-bottom: 1px solid $color-black;
+    border-bottom: $border-black;
   }
 
   .about-schedule-title {
@@ -700,8 +693,7 @@ li .dropdown-item {
   }
 
   .about-schedule {
-    justify-content: center;
-    align-items: center;
+    @include flex;
     margin-top: 5rem;
   }
 
@@ -712,8 +704,7 @@ li .dropdown-item {
   }
 
   .about-history {
-    justify-content: center;
-    align-items: center;
+    @include flex;
     margin-top: 5rem;
     margin-bottom: 5rem;
   }
@@ -722,7 +713,7 @@ li .dropdown-item {
     width: 100%;
     margin-bottom: 0.5rem;
     padding-bottom: 1rem;
-    border-bottom: 1px solid $color-black;
+    border-bottom: $border-black;
   }
 
   .about-schedule-title {
@@ -826,7 +817,7 @@ li .dropdown-item {
 }
 
 @media screen and (min-width: 992px) and (max-width: 1550px) {
-  /* home page tablet */
+  /* home page small screens */
   .home-page {
     background-attachment: initial;
   }
@@ -835,7 +826,7 @@ li .dropdown-item {
     bottom: 1rem;
   }
 
-  /* menu page tablet */
+  /* menu page small screens */
   .menu-list {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -851,17 +842,16 @@ li .dropdown-item {
   }
 
   .menu-container {
-    width: 80%;
+    width: 80%; 
   }
-  /* about page tablet */
+  /* about page small screens */
 
   .about-image {
     height: fit-content;
   }
 
   .about-schedule {
-    justify-content: center;
-    align-items: center;
+    @include flex;
     margin-top: 5rem;
   }
 
@@ -872,8 +862,7 @@ li .dropdown-item {
   }
 
   .about-history {
-    justify-content: center;
-    align-items: center;
+    @include flex;
     margin-top: 5rem;
     margin-bottom: 5rem;
   }
@@ -882,7 +871,7 @@ li .dropdown-item {
     width: 100%;
     margin-bottom: 0.5rem;
     padding-bottom: 1rem;
-    border-bottom: 1px solid $color-black;
+    border-bottom: $border-black;
   }
 
   .about-schedule-title {
@@ -900,7 +889,7 @@ li .dropdown-item {
     padding: 1rem;
   }
 
-  /* booking page tablet */
+  /* booking page small screens */
 
   .booking-page {
     @include width-height(100%, 1100px);
@@ -944,7 +933,7 @@ li .dropdown-item {
 
   .booking-form-input {
     margin-top: 2rem;
-    border: 1px solid $color-white;
+    border: $border-white;
     padding: 1rem;
     border-radius: 8px;
   }
