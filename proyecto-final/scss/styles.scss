@@ -61,7 +61,7 @@ li .dropdown-item {
   font-weight: bold;
   @extend %text-align-data;
   position: relative;
-  bottom: 4rem;
+  bottom: 3rem;
 }
 
 .home-page-container {
@@ -72,6 +72,42 @@ li .dropdown-item {
 
 .home-page-logo img {
   width: 100%;
+}
+
+.home-subtitle {
+  font-family: $font-title-brand;
+  font-weight: bold;
+  @extend %text-align-data;
+}
+
+.cards-especialidades {
+  display: flex;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+.card-especialidad {
+  margin-top: 1rem;
+  transition: transform 0.3s ease;
+  @include border-radious-container;
+  background-color: $color-cards;
+  @include width-height(300px, 150px);
+  @include flex;
+
+  img {
+    @include width-height(100px, 100px);
+  }
+}
+
+.cards-especialidades :hover {
+  cursor: pointer;
+  transform: translate(0, -5px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.card-especialidad :hover {
+  transform: none;
+  box-shadow:none;
 }
 
 .footer-home {
@@ -100,7 +136,7 @@ li .dropdown-item {
   gap: 1rem;
 
   a {
-    @extend %text-decoration-data
+    @extend %text-decoration-data;
   }
 }
 
@@ -842,7 +878,7 @@ li .dropdown-item {
   }
 
   .menu-container {
-    width: 80%; 
+    width: 80%;
   }
   /* about page small screens */
 

@@ -8,7 +8,7 @@
 .booking-form, .location-container {
   box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.5); }
 
-header nav ul, .home-title, .footer-home, .menu-title, .menu-item-title, .menu-list, .item-name, .about-schedule-title h2, .about-schedule-title p, .about-history-title h2, .booking-form-title, .location-restaurant-ubi-p, .location-restaurant-info-p {
+header nav ul, .home-title, .home-subtitle, .footer-home, .menu-title, .menu-item-title, .menu-list, .item-name, .about-schedule-title h2, .about-schedule-title p, .about-history-title h2, .booking-form-title, .location-restaurant-ubi-p, .location-restaurant-info-p {
   text-align: center; }
 
 header nav ul li a, .social-icons, .social-icons a, .booking-title a {
@@ -70,7 +70,7 @@ li .dropdown-item {
   font-family: "Raleway", sans-serif;
   font-weight: bold;
   position: relative;
-  bottom: 4rem; }
+  bottom: 3rem; }
 
 .home-page-container {
   display: flex;
@@ -79,6 +79,38 @@ li .dropdown-item {
 
 .home-page-logo img {
   width: 100%; }
+
+.home-subtitle {
+  font-family: "Raleway", sans-serif;
+  font-weight: bold; }
+
+.cards-especialidades {
+  display: flex;
+  gap: 2rem;
+  margin-top: 1rem; }
+
+.card-especialidad {
+  margin-top: 1rem;
+  transition: transform 0.3s ease;
+  border-radius: 8px;
+  background-color: #2c8194;
+  width: 300px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .card-especialidad img {
+    width: 100px;
+    height: 100px; }
+
+.cards-especialidades :hover {
+  cursor: pointer;
+  transform: translate(0, -5px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); }
+
+.card-especialidad :hover {
+  transform: none;
+  box-shadow: none; }
 
 .footer-home {
   border-top: 1px solid black;
