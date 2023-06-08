@@ -93,7 +93,7 @@ li .dropdown-item {
   margin-top: 1rem;
   transition: transform 0.3s ease;
   border-radius: 8px;
-  background-color: #2c8194;
+  background-color: black;
   width: 300px;
   height: 150px;
   display: flex;

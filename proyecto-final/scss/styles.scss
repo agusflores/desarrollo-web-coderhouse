@@ -90,7 +90,7 @@ li .dropdown-item {
   margin-top: 1rem;
   transition: transform 0.3s ease;
   @include border-radious-container;
-  background-color: $color-cards;
+  background-color: $color-black;
   @include width-height(300px, 150px);
   @include flex;
 
