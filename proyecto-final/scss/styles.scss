@@ -15,7 +15,6 @@ html {
 header {
   @include position-sticky();
   nav {
-    border-bottom: $border-black;
     width: 100%;
 
     ul {
@@ -111,7 +110,6 @@ li .dropdown-item {
 }
 
 .footer-home {
-  border-top: $border-black;
   background-color: $color-white;
   display: flex;
   @extend %text-align-data;
@@ -142,6 +140,7 @@ li .dropdown-item {
 
 .icon {
   color: $color-black;
+  font-size: 1.5rem;
 }
 
 .icon :hover {
