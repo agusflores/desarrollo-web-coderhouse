@@ -79,6 +79,10 @@ li .dropdown-item {
   @extend %text-align-data;
 }
 
+.home-page-container-cards {
+  margin-top: 2rem;
+}
+
 .cards-especialidades {
   display: flex;
   gap: 2rem;
@@ -497,6 +501,10 @@ li .dropdown-item {
     height: 1200px;
   }
   
+  .home-page-container-cards {
+    margin-top: 5rem;
+  }
+
   .cards-especialidades {
     flex-direction: column;
   }
@@ -527,6 +535,11 @@ li .dropdown-item {
   .home-title {
     bottom: 1rem;
   }
+
+  .icon {
+    font-size: 1rem;
+  }
+
   /* menu page mobile */
 
   .menu-list {
