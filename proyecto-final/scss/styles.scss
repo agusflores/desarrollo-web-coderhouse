@@ -52,65 +52,60 @@ li .dropdown-item {
 
 .home-page {
   @include page-properties($home-background-image, 1000px);
-}
 
-.home-title {
-  margin-top: 1rem;
-  font-family: $font-title-brand;
-  font-weight: bold;
-  @extend %text-align-data;
-  position: relative;
-  bottom: 3rem;
-}
-
-.home-page-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.home-page-logo img {
-  width: 100%;
-}
-
-.home-subtitle {
-  font-family: $font-title-brand;
-  font-weight: bold;
-  @extend %text-align-data;
-}
-
-.home-page-container-cards {
-  margin-top: 2rem;
-}
-
-.cards-especialidades {
-  display: flex;
-  gap: 2rem;
-  margin-top: 1rem;
-}
-
-.card-especialidad {
-  margin-top: 1rem;
-  transition: transform 0.3s ease;
-  @include border-radious-container;
-  background-color: $color-black;
-  @include width-height(300px, 150px);
-  @include flex;
-
-  img {
-    @include width-height(100px, 100px);
+  .home-page-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .home-page-logo img {
+      width: 100%;
+    }
+    .home-title {
+      margin-top: 1rem;
+      font-family: $font-title-brand;
+      font-weight: bold;
+      @extend %text-align-data;
+      position: relative;
+      bottom: 3rem;
+    }
+    .home-page-container-cards {
+      margin-top: 2rem;
+      .home-subtitle {
+        font-family: $font-title-brand;
+        font-weight: bold;
+        @extend %text-align-data;
+      }
+      .cards-especialidades {
+        display: flex;
+        gap: 2rem;
+        margin-top: 1rem;
+        .card-especialidad {
+          margin-top: 1rem;
+          transition: transform 0.3s ease;
+          @include border-radious-container;
+          background-color: $color-black;
+          @include width-height(300px, 150px);
+          @include flex;
+        
+          img {
+            @include width-height(100px, 100px);
+          }
+        }
+      }
+    }
   }
 }
+
+
 
 .cards-especialidades :hover {
   cursor: pointer;
   transform: translate(0, -5px);
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
 
 .card-especialidad :hover {
   transform: none;
-  box-shadow:none;
+  box-shadow: none;
 }
 
 .footer-home {
@@ -118,27 +113,24 @@ li .dropdown-item {
   display: flex;
   @extend %text-align-data;
   justify-content: center;
-}
-
-.footer-container {
-  margin-top: 1rem;
-}
-
-.footer-directions {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
-
-.social-icons {
-  display: flex;
-  justify-content: center;
-  @extend %text-decoration-data;
-  margin: 1rem;
-  gap: 1rem;
-
-  a {
-    @extend %text-decoration-data;
+  .footer-container {
+    margin-top: 1rem;
+    .footer-directions {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+    .social-icons {
+      display: flex;
+      justify-content: center;
+      @extend %text-decoration-data;
+      margin: 1rem;
+      gap: 1rem;
+    
+      a {
+        @extend %text-decoration-data;
+      }
+    }
   }
 }
 
@@ -160,48 +152,42 @@ li .dropdown-item {
 
 .menu-image {
   @include page-properties($menu-background-image, fit-content);
-}
-
-.menu-container {
-  background-color: $color-black;
-  @include width-height(70%, 100%);
-  @include flex;
-  flex-direction: column;
-}
-
-.menu-title {
-  color: $color-white;
-  @extend %text-align-data;
-  margin-top: 1rem;
-}
-
-.menu-item-title {
-  color: $color-white;
-  @extend %text-align-data;
-  margin-top: 3rem;
-  margin-bottom: 1rem;
-}
-
-.menu-list {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: center;
-  @extend %text-align-data;
-  justify-content: space-evenly;
-}
-
-.menu-logo {
-  @include flex;
-}
-
-.item {
-  @include width-height(30%, 300px);
-  @include border-radious-container;
-  border: $border-white;
-  margin: 5px;
-  display: flex;
-  flex-direction: column;
+  .menu-container {
+    background-color: $color-black;
+    @include width-height(70%, 100%);
+    @include flex;
+    flex-direction: column;
+    .menu-title {
+      color: $color-white;
+      @extend %text-align-data;
+      margin-top: 1rem;
+    }
+    .menu-item-title {
+      color: $color-white;
+      @extend %text-align-data;
+      margin-top: 3rem;
+      margin-bottom: 1rem;
+    }
+    .menu-list {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: center;
+      @extend %text-align-data;
+      justify-content: space-evenly;
+      .item {
+        @include width-height(30%, 300px);
+        @include border-radious-container;
+        border: $border-white;
+        margin: 5px;
+        display: flex;
+        flex-direction: column;
+      }
+    }
+    .menu-logo {
+      @include flex;
+    }
+  }
 }
 
 .item-image {
@@ -500,7 +486,7 @@ li .dropdown-item {
     background-attachment: initial;
     height: 1200px;
   }
-  
+
   .home-page-container-cards {
     margin-top: 5rem;
   }
@@ -573,6 +559,7 @@ li .dropdown-item {
   .about-schedule-container {
     @include width-height(80%, 600px);
     border: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2), 0 4px 8px rgba(0, 0, 0, 0.1);
     @include border-radious-container;
   }
 
@@ -598,6 +585,7 @@ li .dropdown-item {
     @include width-height(80%, 600px);
     @include border-radious-container;
     border: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2), 0 4px 8px rgba(0, 0, 0, 0.1);
   }
 
   .about-history-information {
@@ -759,6 +747,7 @@ li .dropdown-item {
   .about-schedule-container {
     @include width-height(80%, 600px);
     border: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2), 0 4px 8px rgba(0, 0, 0, 0.1);
     @include border-radious-container;
   }
 
@@ -783,6 +772,7 @@ li .dropdown-item {
   .about-history-container {
     @include width-height(80%, 600px);
     @include border-radious-container;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2), 0 4px 8px rgba(0, 0, 0, 0.1);
     border: none;
   }
 
@@ -918,6 +908,7 @@ li .dropdown-item {
     @include width-height(80%, 700px);
     border: none;
     @include border-radious-container;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2), 0 4px 8px rgba(0, 0, 0, 0.1);
   }
 
   .about-history {
@@ -941,6 +932,7 @@ li .dropdown-item {
   .about-history-container {
     @include width-height(80%, 700px);
     @include border-radious-container;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2), 0 4px 8px rgba(0, 0, 0, 0.1);
     border: none;
   }
 
