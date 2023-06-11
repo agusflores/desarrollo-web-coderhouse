@@ -86,7 +86,7 @@ li .dropdown-item {
           background-color: $color-black;
           @include width-height(300px, 150px);
           @include flex;
-        
+
           img {
             @include width-height(100px, 100px);
           }
@@ -95,8 +95,6 @@ li .dropdown-item {
     }
   }
 }
-
-
 
 .cards-especialidades :hover {
   cursor: pointer;
@@ -126,7 +124,7 @@ li .dropdown-item {
       @extend %text-decoration-data;
       margin: 1rem;
       gap: 1rem;
-    
+
       a {
         @extend %text-decoration-data;
       }
@@ -152,42 +150,48 @@ li .dropdown-item {
 
 .menu-image {
   @include page-properties($menu-background-image, fit-content);
-  .menu-container {
-    background-color: $color-black;
-    @include width-height(70%, 100%);
-    @include flex;
-    flex-direction: column;
-    .menu-title {
-      color: $color-white;
-      @extend %text-align-data;
-      margin-top: 1rem;
-    }
-    .menu-item-title {
-      color: $color-white;
-      @extend %text-align-data;
-      margin-top: 3rem;
-      margin-bottom: 1rem;
-    }
-    .menu-list {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      align-items: center;
-      @extend %text-align-data;
-      justify-content: space-evenly;
-      .item {
-        @include width-height(30%, 300px);
-        @include border-radious-container;
-        border: $border-white;
-        margin: 5px;
-        display: flex;
-        flex-direction: column;
-      }
-    }
-    .menu-logo {
-      @include flex;
-    }
-  }
+}
+
+.menu-container {
+  background-color: $color-black;
+  @include width-height(70%, 100%);
+  @include flex;
+  flex-direction: column;
+}
+
+.menu-item-title {
+  color: $color-white;
+  @extend %text-align-data;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+}
+
+.menu-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  @extend %text-align-data;
+  justify-content: space-evenly;
+}
+
+.item {
+  @include width-height(30%, 300px);
+  @include border-radious-container;
+  border: $border-white;
+  margin: 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+.menu-logo {
+  @include flex;
+}
+
+.menu-title {
+  color: $color-white;
+  @extend %text-align-data;
+  margin-top: 1rem;
 }
 
 .item-image {

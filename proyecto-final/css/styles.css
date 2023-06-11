@@ -8,7 +8,7 @@
 .booking-form, .location-container {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2), 0 4px 8px rgba(0, 0, 0, 0.1); }
 
-header nav ul, .home-page .home-page-container .home-title, .home-page .home-page-container .home-page-container-cards .home-subtitle, .footer-home, .menu-image .menu-container .menu-title, .menu-image .menu-container .menu-item-title, .menu-image .menu-container .menu-list, .item-name, .about-schedule-title h2, .about-schedule-title p, .about-history-title h2, .booking-form-title, .location-restaurant-ubi-p, .location-restaurant-info-p {
+header nav ul, .home-page .home-page-container .home-title, .home-page .home-page-container .home-page-container-cards .home-subtitle, .footer-home, .menu-item-title, .menu-list, .menu-title, .item-name, .about-schedule-title h2, .about-schedule-title p, .about-history-title h2, .booking-form-title, .location-restaurant-ubi-p, .location-restaurant-info-p {
   text-align: center; }
 
 header nav ul li a, .footer-home .footer-container .social-icons, .footer-home .footer-container .social-icons a, .booking-title a {
@@ -139,39 +139,45 @@ li .dropdown-item {
   display: flex;
   align-items: center;
   justify-content: center; }
-  .menu-image .menu-container {
-    background-color: black;
-    width: 70%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column; }
-    .menu-image .menu-container .menu-title {
-      color: whitesmoke;
-      margin-top: 1rem; }
-    .menu-image .menu-container .menu-item-title {
-      color: whitesmoke;
-      margin-top: 3rem;
-      margin-bottom: 1rem; }
-    .menu-image .menu-container .menu-list {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      align-items: center;
-      justify-content: space-evenly; }
-      .menu-image .menu-container .menu-list .item {
-        width: 30%;
-        height: 300px;
-        border-radius: 8px;
-        border: 1px solid whitesmoke;
-        margin: 5px;
-        display: flex;
-        flex-direction: column; }
-    .menu-image .menu-container .menu-logo {
-      display: flex;
-      justify-content: center;
-      align-items: center; }
+
+.menu-container {
+  background-color: black;
+  width: 70%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; }
+
+.menu-item-title {
+  color: whitesmoke;
+  margin-top: 3rem;
+  margin-bottom: 1rem; }
+
+.menu-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly; }
+
+.item {
+  width: 30%;
+  height: 300px;
+  border-radius: 8px;
+  border: 1px solid whitesmoke;
+  margin: 5px;
+  display: flex;
+  flex-direction: column; }
+
+.menu-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.menu-title {
+  color: whitesmoke;
+  margin-top: 1rem; }
 
 .item-image {
   width: 100%;
